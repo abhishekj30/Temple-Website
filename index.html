@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shree Datta Devasthan - A divine place of worship dedicated to Lord Dattatreya. Visit us for darshan, festivals, spiritual guidance, and devotional services.">
+    <title>Shree Datta Devasthan - श्री दत्त देवस्थान</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Crimson+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="temple-logo.png" alt="Shree Datta Devasthan Logo" class="logo-img">
+                <span class="logo-text" data-en="Shree Datta Devasthan" data-mr="श्री दत्त देवस्थान">Shree Datta
+                    Devasthan</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-right">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#about" data-en="About" data-mr="आमच्याबद्दल">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#guru-parampara" data-en="Guru Parampara" data-mr="गुरु परंपरा">Guru
+                                    Parampara</a></li>
+                            <li><a href="#sadguru-swami" data-en="H.H. Sadguru Sree Ramakrishna Kshirsagar Swami"
+                                    data-mr="प. पू. सद्गुरू श्रीरामकृष्ण क्षीरसागर महाराज">H.H. Sadguru Sree Ramakrishna
+                                    Kshirsagar Swami</a></li>
+                            <li><a href="#kalparusha" data-en="Kalparusha" data-mr="कल्पवृक्ष">Kalparusha</a></li>
+                            <li><a href="#vedant-vidyapith" data-en="Vedant Vidyapith" data-mr="वेदांत विद्यापीठ">Vedant
+                                    Vidyapith</a></li>
+                            <li><a href="#datta-devasthan" data-en="Datta Devasthan" data-mr="दत्त देवस्थान">Datta
+                                    Devasthan</a></li>
+                            <li><a href="#dattatray-niwas" data-en="Dattatray Niwas" data-mr="दत्तात्रय निवास">Dattatray
+                                    Niwas</a></li>
+                            <li><a href="#tapovan" data-en="Tapovan" data-mr="तपोवन">Tapovan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#panchang" data-en="Panchang" data-mr="पंचांग">Panchang</a></li>
+                    <li><a href="#timings" data-en="Timings" data-mr="वेळापत्रक">Timings</a></li>
+                    <li class="dropdown">
+                        <a href="#gallery" data-en="Gallery" data-mr="गॅलरी">Gallery</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="photos.html" data-en="Photos" data-mr="फोटो">Photos</a></li>
+                            <li><a href="#videos" data-en="Videos" data-mr="व्हिडिओ">Videos</a></li>
+                            <li><a href="#audios" data-en="Audios" data-mr="ऑडिओ">Audios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#events" data-en="Events" data-mr="कार्यक्रम">Events</a></li>
+                    <li class="dropdown">
+                        <a href="#online-services" data-en="Online Services" data-mr="ऑनलाइन सेवा">Online Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="navDonateBtn" data-en="Donation" data-mr="देणगी">Donation</a></li>
+                            <li><a href="#" id="navSevaBtn" data-en="Seva Registration" data-mr="सेवा नोंदणी">Seva
+                                    Registration</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#publication" data-en="Publication" data-mr="प्रकाशन">Publication</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#sadguru-grantha" data-en="Sadguru Grantha Sahitya"
+                                    data-mr="सद्गुरू ग्रंथ साहित्य">Sadguru Grantha Sahitya</a></li>
+                            <li><a href="#guru-seva-vartaptra" data-en="Shri Guru Seva Vartaptra"
+                                    data-mr="श्री गुरु सेवा वार्तापत्र">Shri Guru Seva Vartaptra</a></li>
+                            <li><a href="#amrutkan" data-en="Amrutkan" data-mr="अमृतकण">Amrutkan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#get-involved" data-en="Get Involved" data-mr="सहभागी व्हा">Get Involved</a></li>
+                    <li><a href="#contact" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                </ul>
+
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option" data-lang="mr">मराठी</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero" id="home">
+        <div class="hero-carousel">
+            <div class="hero-slide active" style="background-image: url('carousel-1.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('carousel-2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('carousel-3.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <!-- Carousel Navigation -->
+        <div class="carousel-nav">
+            <button class="carousel-dot active" data-slide="0"></button>
+            <button class="carousel-dot" data-slide="1"></button>
+            <button class="carousel-dot" data-slide="2"></button>
+        </div>
+        <div class="scroll-indicator">
+            <span data-en="Scroll to explore" data-mr="अन्वेषण करण्यासाठी स्क्रोल करा">Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="mandala-bg top-right"></div>
+        <div class="container">
+            <h2 class="section-title" data-en="About Shree Datta Devasthan" data-mr="श्री दत्त देवस्थान बद्दल">About
+                Shree Datta Devasthan</h2>
+
+            <div class="grid grid-2 about-grid">
+                <div class="fade-in">
+                    <h3 class="subsection-title" data-en="H.H. Sadguru Sree Ramakrishna Kshirsagar Swami"
+                        data-mr="प. पू. सद्गुरू श्रीरामकृष्ण क्षीरसागर महाराज">H.H. Sadguru Sree Ramakrishna Kshirsagar
+                        Swami</h3>
+                    <p data-en="In today's fast-paced life and modern scientific age, humanity has lost peace of mind. To achieve eternal happiness, there is a need to walk on the spiritual path. To revive Vedic religion in today's times, to remove the stigma that has come to Vedic dharma, and for the salvation of devotees, H.H. Sadguru Shri Ramakrishna Kshirsagar Maharaj incarnated."
+                        data-mr="सध्याच्या धकाधकीच्या जीवनात व अत्याधुनिक विज्ञानयुगात मन:शांती हरवून बसलेल्या मानवाला शाश्वत सुखासाठी अध्यात्ममार्गावर चालण्याची गरज आहे. आजच्या काळात वैदिक धर्माचे पुनरुज्जीवन करण्यासाठी, वेदधर्माला आलेली ग्लानी दूर करण्यासाठी व भक्तांच्या उद्धारासाठी प. पू. सद्गुरू श्रीरामकृष्ण क्षीरसागर महाराज यांनी अवतार घेतला.">
+                        In today's fast-paced life and modern scientific age, humanity has lost peace of mind. To
+                        achieve eternal happiness, there is a need to walk on the spiritual path. To revive Vedic
+                        religion in today's times, to remove the stigma that has come to Vedic dharma, and for the
+                        salvation of devotees, H.H. Sadguru Shri Ramakrishna Kshirsagar Maharaj incarnated.</p>
+                    <p data-en="Born on Falgun Shuddha Tritiya, Shake 1855 (February 16, 1934) in Rayatale village, Parner Taluka, Nagar District. At the tender age of 7, he had a divine vision, gained knowledge of the past, present and future, and at that very moment, he had an idea of his life's work."
+                        data-mr="प. पू. गुरुदेवांचा जन्म फाल्गुन शुद्ध तृतीया शके १८५५, दिनांक १६ फेब्रुवारी १९३४ रोजी नगर जिल्ह्यात, पारनेर तालुक्यातील रायतळे या गावी झाला. वयाच्या अवघ्या ७ व्या वर्षी त्यांना ईश्वरी साक्षात्कार झाला, त्रिकालज्ञान झाले व त्याच क्षणी त्यांना आपल्या जीवनकार्याची कल्पना आली.">
+                        Born on Falgun Shuddha Tritiya, Shake 1855 (February 16, 1934) in Rayatale village, Parner
+                        Taluka, Nagar District. At the tender age of 7, he had a divine vision, gained knowledge of the
+                        past, present and future, and at that very moment, he had an idea of his life's work.</p>
+                </div>
+                <div class="img-wrapper fade-in">
+                    <img src="diya.png" alt="Sacred diya lamp">
+                </div>
+            </div>
+
+            <div class="grid grid-2 about-grid reverse">
+                <div class="img-wrapper fade-in">
+                    <img src="temple-hero.png" alt="Temple view">
+                </div>
+                <div class="fade-in">
+                    <h3 class="subsection-title" data-en="Shri Datta Devasthan Trust"
+                        data-mr="श्री दत्त देवस्थान ट्रस्ट">Shri Datta Devasthan Trust</h3>
+                    <p data-en="H.H. Sadguru Shri Ramkrishna Kshirsagar Maharaj at the behest of Shrimannrusimha Saraswati Swami's decree, established Shri Datta Devasthan Trust for the propagation of Vedas in 1974. The main aim of establishing this trust is to carry out the work of protection and preservation of Vedas."
+                        data-mr="प. पू. सद्गुरू श्रीरामकृष्ण क्षीरसागर महाराज यांनी श्रीमन्नृसिंह सरस्वती स्वामींच्या आदेशानुसार वेदांच्या प्रचारासाठी १९७४ मध्ये श्री दत्त देवस्थान ट्रस्टची स्थापना केली. या ट्रस्टच्या स्थापनेचा मुख्य उद्देश वेदांचे संरक्षण आणि जतन करण्याचे कार्य करणे आहे.">
+                        H.H. Sadguru Shri Ramkrishna Kshirsagar Maharaj at the behest of Shrimannrusimha Saraswati
+                        Swami's decree, established Shri Datta Devasthan Trust for the propagation of Vedas in 1974. The
+                        main aim of establishing this trust is to carry out the work of protection and preservation of
+                        Vedas.</p>
+                    <p data-en="To foster this work further, H.H. Sadguru established Vedant Vidyapeeth (University), where the Four Vedas are taught through Gurukul Pedagogy. The scope of Shri Datta Devasthan Trust encompasses Vedant Vidyapeeth, Shri Dattakshetra, Tapovan Maruti Mandir, Goshala, and many Satsanga Mandalas."
+                        data-mr="या कार्याला पुढे नेण्यासाठी, प. पू. सद्गुरूंनी वेदांत विद्यापीठाची स्थापना केली, जेथे गुरुकुल पद्धतीद्वारे चार वेद शिकवले जातात. श्री दत्त देवस्थान ट्रस्टच्या कार्यक्षेत्रात वेदांत विद्यापीठ, श्री दत्तक्षेत्र, तपोवन मारुती मंदिर, गोशाळा आणि अनेक सत्संग मंडळांचा समावेश आहे.">
+                        To foster this work further, H.H. Sadguru established Vedant Vidyapeeth (University), where the
+                        Four Vedas are taught through Gurukul Pedagogy. The scope of Shri Datta Devasthan Trust
+                        encompasses Vedant Vidyapeeth, Shri Dattakshetra, Tapovan Maruti Mandir, Goshala, and many
+                        Satsanga Mandalas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Darshan Section -->
+    <section class="section section-dark" id="live-darshan">
+        <div class="container">
+            <h2 class="section-title" data-en="Live Darshan" data-mr="लाईव्ह दर्शन">Live Darshan</h2>
+            <div class="live-darshan-container">
+                <div class="live-badge" data-en="🔴 LIVE" data-mr="🔴 लाईव्ह">🔴 LIVE</div>
+                <div class="video-placeholder">
+                    <div class="video-icon">📹</div>
+                    <p data-en="Live streaming will be available during Aarti timings"
+                        data-mr="आरती वेळेत लाइव्ह स्ट्रीमिंग उपलब्ध असेल">Live streaming will be available during Aarti
+                        timings</p>
+                    <button class="btn btn-primary" data-en="Watch Live Darshan" data-mr="लाईव्ह दर्शन पहा">Watch Live
+                        Darshan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Panchang Section -->
+    <section class="section" id="panchang">
+        <div class="container">
+            <h2 class="section-title" data-en="Today's Panchang" data-mr="आजचे पंचांग">Today's Panchang</h2>
+            <div class="panchang-container">
+                <div class="panchang-card">
+                    <div class="panchang-icon">📅</div>
+                    <h3 data-en="Hindu Date" data-mr="हिंदू तारीख">Hindu Date</h3>
+                    <p id="hinduDate" class="panchang-value">Paush Shukla Ekadashi</p>
+                </div>
+                <div class="panchang-card">
+                    <div class="panchang-icon">🌙</div>
+                    <h3 data-en="Tithi" data-mr="तिथी">Tithi</h3>
+                    <p id="tithi" class="panchang-value">Ekadashi</p>
+                </div>
+                <div class="panchang-card">
+                    <div class="panchang-icon">⭐</div>
+                    <h3 data-en="Nakshatra" data-mr="नक्षत्र">Nakshatra</h3>
+                    <p id="nakshatra" class="panchang-value">Pushya</p>
+                </div>
+                <div class="panchang-card">
+                    <div class="panchang-icon">☀️</div>
+                    <h3 data-en="Sunrise" data-mr="सूर्योदय">Sunrise</h3>
+                    <p id="sunrise" class="panchang-value">6:45 AM</p>
+                </div>
+                <div class="panchang-card">
+                    <div class="panchang-icon">🌅</div>
+                    <h3 data-en="Sunset" data-mr="सूर्यास्त">Sunset</h3>
+                    <p id="sunset" class="panchang-value">6:15 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Darshan Timings & Services -->
+    <section class="section section-gradient" id="timings">
+        <div class="container">
+            <h2 class="section-title" data-en="Darshan Timings & Services" data-mr="दर्शन वेळापत्रक आणि सेवा">Darshan
+                Timings & Services</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">🌅</div>
+                    <h3 class="card-title" data-en="Morning Darshan" data-mr="सकाळचे दर्शन">Morning Darshan</h3>
+                    <p class="card-text"><strong>6:00 AM - 12:00 PM</strong></p>
+                    <p class="card-text"
+                        data-en="Begin your day with divine blessings. Morning aarti at 6:30 AM followed by open darshan for devotees."
+                        data-mr="दैवी आशीर्वादाने आपला दिवस सुरू करा. सकाळी ६:३० वाजता आरती आणि त्यानंतर भक्तांसाठी मुक्त दर्शन.">
+                        Begin your day with divine blessings. Morning aarti at 6:30 AM followed by open darshan for
+                        devotees.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🌇</div>
+                    <h3 class="card-title" data-en="Evening Darshan" data-mr="संध्याकाळचे दर्शन">Evening Darshan</h3>
+                    <p class="card-text"><strong>4:00 PM - 9:00 PM</strong></p>
+                    <p class="card-text"
+                        data-en="Experience the serene evening aarti at 7:00 PM. Witness the temple illuminated in golden lights."
+                        data-mr="संध्याकाळी ७:०० वाजता शांत आरतीचा अनुभव घ्या. सुवर्ण प्रकाशात प्रकाशित झालेले मंदिर पहा.">
+                        Experience the serene evening aarti at 7:00 PM. Witness the temple illuminated in golden lights.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🙏</div>
+                    <h3 class="card-title" data-en="Special Pujas" data-mr="विशेष पूजा">Special Pujas</h3>
+                    <p class="card-text" data-en="By Appointment" data-mr="भेटीनुसार"><strong data-en="By Appointment"
+                            data-mr="भेटीनुसार">By Appointment</strong></p>
+                    <p class="card-text"
+                        data-en="Book special pujas for personal blessings, festivals, or family occasions. Contact temple office for details."
+                        data-mr="वैयक्तिक आशीर्वाद, सण किंवा कौटुंबिक प्रसंगांसाठी विशेष पूजा बुक करा. तपशीलासाठी मंदिर कार्यालयाशी संपर्क साधा.">
+                        Book special pujas for personal blessings, festivals, or family occasions. Contact temple office
+                        for details.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📿</div>
+                    <h3 class="card-title" data-en="Daily Rituals" data-mr="दैनंदिन विधी">Daily Rituals</h3>
+                    <p class="card-text">
+                        <span data-en="Abhishekam: 7:00 AM" data-mr="अभिषेक: सकाळी ७:००">Abhishekam: 7:00 AM</span><br>
+                        <span data-en="Archana: 11:00 AM" data-mr="अर्चना: सकाळी ११:००">Archana: 11:00 AM</span><br>
+                        <span data-en="Deeparadhana: 7:00 PM" data-mr="दीपारधना: संध्याकाळी ७:००">Deeparadhana: 7:00
+                            PM</span>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🎵</div>
+                    <h3 class="card-title" data-en="Bhajan Sessions" data-mr="भजन सत्र">Bhajan Sessions</h3>
+                    <p class="card-text" data-en="Every Weekend" data-mr="प्रत्येक आठवड्याच्या शेवटी"><strong
+                            data-en="Every Weekend" data-mr="प्रत्येक आठवड्याच्या शेवटी">Every Weekend</strong></p>
+                    <p class="card-text"
+                        data-en="Join our devotional singing sessions every Saturday and Sunday evening from 6:00 PM to 7:00 PM."
+                        data-mr="प्रत्येक शनिवार आणि रविवारी संध्याकाळी ६:०० ते ७:०० या आमच्या भक्तिगीत सत्रात सहभागी व्हा.">
+                        Join our devotional singing sessions every Saturday and Sunday evening from 6:00 PM to 7:00 PM.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3 class="card-title" data-en="Spiritual Classes" data-mr="आध्यात्मिक वर्ग">Spiritual Classes</h3>
+                    <p class="card-text" data-en="Thursdays 5:00 PM" data-mr="गुरुवारी संध्याकाळी ५:००"><strong
+                            data-en="Thursdays 5:00 PM" data-mr="गुरुवारी संध्याकाळी ५:००">Thursdays 5:00 PM</strong>
+                    </p>
+                    <p class="card-text"
+                        data-en="Learn ancient scriptures, meditation techniques, and spiritual wisdom from learned scholars."
+                        data-mr="विद्वान विद्वानांकडून प्राचीन शास्त्रे, ध्यान तंत्रे आणि अध्यात्मिक ज्ञान शिका.">Learn
+                        ancient scriptures, meditation techniques, and spiritual wisdom from learned scholars.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Bhajans Section -->
+    <section class="section" id="audios">
+        <div class="mandala-bg bottom-left"></div>
+        <div class="container">
+            <h2 class="section-title" data-en="Devotional Audios" data-mr="भक्तिगीत ऑडिओ">Devotional Audios</h2>
+            <div class="audio-player-container">
+                <div class="audio-player">
+                    <div class="audio-artwork">
+                        <img src="mandala.png" alt="Bhajan artwork">
+                    </div>
+                    <div class="audio-info">
+                        <h3 class="audio-title" id="audioTitle" data-en="Shri Datta Aarti" data-mr="श्री दत्त आरती">Shri
+                            Datta Aarti</h3>
+                        <p class="audio-artist" data-en="Temple Bhajan Mandal" data-mr="मंदिर भजन मंडळ">Temple Bhajan
+                            Mandal</p>
+                    </div>
+                    <div class="audio-controls">
+                        <button class="audio-btn" id="prevBtn">⏮</button>
+                        <button class="audio-btn play-btn" id="playBtn">▶️</button>
+                        <button class="audio-btn" id="nextBtn">⏭</button>
+                    </div>
+                    <div class="audio-progress">
+                        <input type="range" class="progress-bar" id="progressBar" min="0" max="100" value="0">
+                        <div class="audio-time">
+                            <span id="currentTime">0:00</span>
+                            <span id="duration">3:45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audio-playlist">
+                    <h4 data-en="Playlist" data-mr="प्लेलिस्ट">Playlist</h4>
+                    <div class="playlist-item active" data-title-en="Shri Datta Aarti" data-title-mr="श्री दत्त आरती">
+                        <span class="playlist-icon">🎵</span>
+                        <span class="playlist-title" data-en="Shri Datta Aarti" data-mr="श्री दत्त आरती">Shri Datta
+                            Aarti</span>
+                        <span class="playlist-duration">3:45</span>
+                    </div>
+                    <div class="playlist-item" data-title-en="Guru Stotra" data-title-mr="गुरु स्तोत्र">
+                        <span class="playlist-icon">🎵</span>
+                        <span class="playlist-title" data-en="Guru Stotra" data-mr="गुरु स्तोत्र">Guru Stotra</span>
+                        <span class="playlist-duration">5:20</span>
+                    </div>
+                    <div class="playlist-item" data-title-en="Digambara Digambara" data-title-mr="दिगंबरा दिगंबरा">
+                        <span class="playlist-icon">🎵</span>
+                        <span class="playlist-title" data-en="Digambara Digambara" data-mr="दिगंबरा दिगंबरा">Digambara
+                            Digambara</span>
+                        <span class="playlist-duration">4:15</span>
+                    </div>
+                    <div class="playlist-item" data-title-en="Dattatreya Mantra" data-title-mr="दत्तात्रेय मंत्र">
+                        <span class="playlist-icon">🎵</span>
+                        <span class="playlist-title" data-en="Dattatreya Mantra" data-mr="दत्तात्रेय मंत्र">Dattatreya
+                            Mantra</span>
+                        <span class="playlist-duration">6:30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section section-gradient" id="gallery">
+        <div class="container">
+            <h2 class="section-title" data-en="Sacred Glimpses" data-mr="पवित्र झलक">Sacred Glimpses</h2>
+
+            <!-- Photos Tab -->
+            <div id="photos" class="gallery-section">
+                <h3 class="subsection-title" data-en="Photo Gallery" data-mr="फोटो गॅलरी">Photo Gallery</h3>
+                <div class="grid grid-4">
+                    <div class="img-wrapper">
+                        <img src="temple-hero.png" alt="Temple architecture">
+                        <div class="img-overlay">
+                            <h4 data-en="Divine Architecture" data-mr="दैवी वास्तुकला">Divine Architecture</h4>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="diya.png" alt="Temple diya">
+                        <div class="img-overlay">
+                            <h4 data-en="Sacred Lights" data-mr="पवित्र दिवे">Sacred Lights</h4>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="mandala.png" alt="Sacred mandala">
+                        <div class="img-overlay">
+                            <h4 data-en="Spiritual Symbols" data-mr="आध्यात्मिक चिन्हे">Spiritual Symbols</h4>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="temple-hero.png" alt="Temple view">
+                        <div class="img-overlay">
+                            <h4 data-en="Temple Premises" data-mr="मंदिर परिसर">Temple Premises</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Videos Tab -->
+            <div id="videos" class="gallery-section">
+                <h3 class="subsection-title" data-en="Video Gallery" data-mr="व्हिडिओ गॅलरी">Video Gallery</h3>
+                <div class="grid grid-3">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="temple-hero.png" alt="Video thumbnail">
+                            <div class="play-button">▶</div>
+                        </div>
+                        <h4 data-en="Morning Aarti Ceremony" data-mr="सकाळची आरती">Morning Aarti Ceremony</h4>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="diya.png" alt="Video thumbnail">
+                            <div class="play-button">▶</div>
+                        </div>
+                        <h4 data-en="Guru Jayanti Celebrations" data-mr="गुरु जयंती उत्सव">Guru Jayanti Celebrations
+                        </h4>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="mandala.png" alt="Video thumbnail">
+                            <div class="play-button">▶</div>
+                        </div>
+                        <h4 data-en="Dattatreya Jayanti" data-mr="दत्तात्रेय जयंती">Dattatreya Jayanti</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events & Festivals -->
+    <section class="section" id="events">
+        <div class="container">
+            <h2 class="section-title" data-en="Upcoming Events & Festivals" data-mr="आगामी कार्यक्रम आणि सण">Upcoming
+                Events & Festivals</h2>
+            <div class="grid grid-2">
+                <div class="card event-card">
+                    <div class="event-date">
+                        <span class="date-day">8</span>
+                        <span class="date-month" data-en="MAR" data-mr="मार्च">MAR</span>
+                    </div>
+                    <div class="event-details">
+                        <div class="card-icon">🕉</div>
+                        <h3 class="card-title" data-en="Maha Shivaratri" data-mr="महाशिवरात्री">Maha Shivaratri</h3>
+                        <p class="card-text"
+                            data-en="Celebrate the great night of Lord Shiva with special abhishekam, night-long bhajans, and sacred rituals."
+                            data-mr="विशेष अभिषेक, रात्रभर भजन आणि पवित्र विधींसह भगवान शिवांच्या महान रात्रीचा उत्सव साजरा करा.">
+                            Celebrate the great night of Lord Shiva with special abhishekam, night-long bhajans, and
+                            sacred rituals.</p>
+                    </div>
+                </div>
+
+                <div class="card event-card">
+                    <div class="event-date">
+                        <span class="date-day">1-9</span>
+                        <span class="date-month" data-en="APR" data-mr="एप्रिल">APR</span>
+                    </div>
+                    <div class="event-details">
+                        <div class="card-icon">🌺</div>
+                        <h3 class="card-title" data-en="Chaitra Navratri" data-mr="चैत्र नवरात्री">Chaitra Navratri</h3>
+                        <p class="card-text"
+                            data-en="Nine nights of divine celebration honoring the Divine Mother. Special pujas, cultural programs, and prasadam distribution daily."
+                            data-mr="दिव्य मातेचा सन्मान करणारे नऊ रात्रीचे दिव्य उत्सव. दररोज विशेष पूजा, सांस्कृतिक कार्यक्रम आणि प्रसाद वितरण.">
+                            Nine nights of divine celebration honoring the Divine Mother. Special pujas, cultural
+                            programs, and prasadam distribution daily.</p>
+                    </div>
+                </div>
+
+                <div class="card event-card">
+                    <div class="event-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month" data-en="JUL" data-mr="जुलै">JUL</span>
+                    </div>
+                    <div class="event-details">
+                        <div class="card-icon">🙏</div>
+                        <h3 class="card-title" data-en="Guru Purnima" data-mr="गुरु पूर्णिमा">Guru Purnima</h3>
+                        <p class="card-text"
+                            data-en="Sacred day dedicated to spiritual masters. Grand celebrations with special worship and devotional programs."
+                            data-mr="आध्यात्मिक गुरूंना समर्पित पवित्र दिवस. विशेष पूजा आणि भक्ती कार्यक्रमांसह भव्य उत्सव.">
+                            Sacred day dedicated to spiritual masters. Grand celebrations with special worship and
+                            devotional programs.</p>
+                    </div>
+                </div>
+
+                <div class="card event-card">
+                    <div class="event-date">
+                        <span class="date-day">23</span>
+                        <span class="date-month" data-en="DEC" data-mr="डिसेंबर">DEC</span>
+                    </div>
+                    <div class="event-details">
+                        <div class="card-icon">✨</div>
+                        <h3 class="card-title" data-en="Dattatreya Jayanti" data-mr="दत्तात्रेय जयंती">Dattatreya
+                            Jayanti</h3>
+                        <p class="card-text"
+                            data-en="Grand celebration of Lord Dattatreya's birth anniversary with elaborate rituals, processions, and community feast."
+                            data-mr="विस्तृत विधी, मिरवणुका आणि सामुदायिक मेजवानीसह भगवान दत्तात्रेयाच्या जन्म जयंतीचा भव्य उत्सव.">
+                            Grand celebration of Lord Dattatreya's birth anniversary with elaborate rituals,
+                            processions, and community feast.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="section section-dark" id="get-involved">
+        <div class="container">
+            <h2 class="section-title" data-en="Get Involved" data-mr="सहभागी व्हा">Get Involved</h2>
+
+            <div class="grid grid-3">
+                <!-- Newsletter -->
+                <div class="card">
+                    <div class="card-icon">📧</div>
+                    <h3 class="card-title" data-en="Newsletter" data-mr="वृत्तपत्र">Newsletter</h3>
+                    <p class="card-text" data-en="Stay updated with temple events, festivals, and spiritual teachings."
+                        data-mr="मंदिराच्या कार्यक्रम, सण आणि आध्यात्मिक शिकवणींसह अद्ययावत रहा.">Stay updated with
+                        temple events, festivals, and spiritual teachings.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" data-placeholder-en="Enter your email"
+                            data-placeholder-mr="आपला ईमेल प्रविष्ट करा" required>
+                        <button type="submit" class="btn btn-primary" data-en="Subscribe"
+                            data-mr="सदस्यता घ्या">Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- Volunteer -->
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3 class="card-title" data-en="Volunteer Registration" data-mr="स्वयंसेवक नोंदणी">Volunteer
+                        Registration</h3>
+                    <p class="card-text"
+                        data-en="Join our seva team and contribute to temple activities and community service."
+                        data-mr="आमच्या सेवा टीममध्ये सामील व्हा आणि मंदिर क्रियाकलाप आणि समाज सेवेमध्ये योगदान द्या.">
+                        Join our seva team and contribute to temple activities and community service.</p>
+                    <button class="btn btn-secondary" id="volunteerBtn" data-en="Register Now"
+                        data-mr="आता नोंदणी करा">Register Now</button>
+                </div>
+
+                <!-- Donation -->
+                <div class="card">
+                    <div class="card-icon">💝</div>
+                    <h3 class="card-title" data-en="Donations" data-mr="देणगी">Donations</h3>
+                    <p class="card-text"
+                        data-en="Support temple maintenance, charitable activities, and Vedic education programs."
+                        data-mr="मंदिर देखभाल, धर्मादाय क्रियाकलाप आणि वैदिक शिक्षण कार्यक्रमांना समर्थन द्या.">Support
+                        temple maintenance, charitable activities, and Vedic education programs.</p>
+                    <button class="btn btn-primary" id="donateBtn" data-en="Donate Now" data-mr="आता देणगी द्या">Donate
+                        Now</button>
+                </div>
+            </div>
+
+            <!-- Prasad Booking -->
+            <div class="prasad-section">
+                <h3 class="subsection-title" data-en="Prasad Booking" data-mr="प्रसाद बुकिंग">Prasad Booking</h3>
+                <div class="grid grid-4">
+                    <div class="prasad-card">
+                        <div class="prasad-img">
+                            <img src="diya.png" alt="Prasad">
+                        </div>
+                        <h4 data-en="Maha Prasad" data-mr="महाप्रसाद">Maha Prasad</h4>
+                        <p class="prasad-price">₹501</p>
+                        <button class="btn btn-small" data-en="Book Now" data-mr="आता बुक करा">Book Now</button>
+                    </div>
+                    <div class="prasad-card">
+                        <div class="prasad-img">
+                            <img src="mandala.png" alt="Prasad">
+                        </div>
+                        <h4 data-en="Special Prasad" data-mr="विशेष प्रसाद">Special Prasad</h4>
+                        <p class="prasad-price">₹251</p>
+                        <button class="btn btn-small" data-en="Book Now" data-mr="आता बुक करा">Book Now</button>
+                    </div>
+                    <div class="prasad-card">
+                        <div class="prasad-img">
+                            <img src="diya.png" alt="Prasad">
+                        </div>
+                        <h4 data-en="Regular Prasad" data-mr="नियमित प्रसाद">Regular Prasad</h4>
+                        <p class="prasad-price">₹101</p>
+                        <button class="btn btn-small" data-en="Book Now" data-mr="आता बुक करा">Book Now</button>
+                    </div>
+                    <div class="prasad-card">
+                        <div class="prasad-img">
+                            <img src="mandala.png" alt="Prasad">
+                        </div>
+                        <h4 data-en="Naivedya Prasad" data-mr="नैवेद्य प्रसाद">Naivedya Prasad</h4>
+                        <p class="prasad-price">₹151</p>
+                        <button class="btn btn-small" data-en="Book Now" data-mr="आता बुक करा">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-en="Visit Us" data-mr="आमची भेट घ्या">Visit Us</h2>
+            <div class="grid grid-2 contact-grid">
+                <div>
+                    <h3 class="subsection-title" data-en="Temple Location" data-mr="मंदिर स्थान">Temple Location</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong data-en="Address:" data-mr="पत्ता:">Address:</strong>
+                                <p data-en="Shree Datta Devasthan Trust, Vedant Vidyapeetham, Ahmednagar, Maharashtra - 414001"
+                                    data-mr="श्री दत्त देवस्थान ट्रस्ट, वेदांत विद्यापीठम, अहमदनगर, महाराष्ट्र - ४१४००१">
+                                    Shree Datta Devasthan Trust, Vedant Vidyapeetham, Ahmednagar, Maharashtra - 414001
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong data-en="Phone:" data-mr="फोन:">Phone:</strong>
+                                <p>+91 98765 43210<br>+91 98765 43211</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <strong data-en="Email:" data-mr="ईमेल:">Email:</strong>
+                                <p>info@dattadevasthan.org</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">🌐</span>
+                            <div>
+                                <strong data-en="Website:" data-mr="संकेतस्थळ:">Website:</strong>
+                                <p>www.dattadevasthan.org</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card guidelines-card">
+                    <h3 class="subsection-title" data-en="Visitor Guidelines" data-mr="अभ्यागत मार्गदर्शक तत्त्वे">
+                        Visitor Guidelines</h3>
+                    <ul class="guidelines-list">
+                        <li data-en="✓ Dress modestly and respectfully" data-mr="✓ नम्रपणे आणि आदराने कपडे घाला">✓ Dress
+                            modestly and respectfully</li>
+                        <li data-en="✓ Remove footwear before entering temple"
+                            data-mr="✓ मंदिरात प्रवेश करण्यापूर्वी पादत्राणे काढा">✓ Remove footwear before entering
+                            temple</li>
+                        <li data-en="✓ Maintain silence inside the sanctum" data-mr="✓ गर्भगृहात शांतता राखा">✓ Maintain
+                            silence inside the sanctum</li>
+                        <li data-en="✓ Photography allowed in designated areas"
+                            data-mr="✓ नियुक्त क्षेत्रात छायाचित्रणाची परवानगी">✓ Photography allowed in designated
+                            areas</li>
+                        <li data-en="✓ Free prasadam after aarti" data-mr="✓ आरतीनंतर मोफत प्रसाद">✓ Free prasadam after
+                            aarti</li>
+                        <li data-en="✓ Wheelchair accessible facilities" data-mr="✓ व्हीलचेअर प्रवेश सुविधा">✓
+                            Wheelchair accessible facilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-en="About Temple" data-mr="मंदिराबद्दल">About Temple</h3>
+                    <p data-en="A sacred sanctuary dedicated to Lord Dattatreya and spiritual enlightenment. Established for the propagation and preservation of Vedic knowledge."
+                        data-mr="भगवान दत्तात्रेय आणि आध्यात्मिक ज्ञानासाठी समर्पित एक पवित्र अभयारण्य. वैदिक ज्ञानाच्या प्रसार आणि संरक्षणासाठी स्थापित.">
+                        A sacred sanctuary dedicated to Lord Dattatreya and spiritual enlightenment. Established for the
+                        propagation and preservation of Vedic knowledge.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-mr="द्रुत दुवे">Quick Links</h3>
+                    <a href="#home" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
+                    <a href="#about" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a>
+                    <a href="#timings" data-en="Timings" data-mr="वेळापत्रक">Timings</a>
+                    <a href="#events" data-en="Events" data-mr="कार्यक्रम">Events</a>
+                    <a href="#contact" data-en="Contact" data-mr="संपर्क">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-en="Temple Timings" data-mr="मंदिर वेळापत्रक">Temple Timings</h3>
+                    <p data-en="Morning: 6:00 AM - 12:00 PM" data-mr="सकाळ: ६:०० - १२:००">Morning: 6:00 AM - 12:00 PM
+                    </p>
+                    <p data-en="Evening: 4:00 PM - 9:00 PM" data-mr="संध्याकाळ: ४:०० - ९:००">Evening: 4:00 PM - 9:00 PM
+                    </p>
+                    <p data-en="All days of the week" data-mr="आठवड्याचे सर्व दिवस">All days of the week</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-en="Connect With Us" data-mr="आमच्याशी जुळवा">Connect With Us</h3>
+                    <p>📞 +91 98765 43210</p>
+                    <p>✉️ info@dattadevasthan.org</p>
+                    <p data-en="📍 Ahmednagar, Maharashtra" data-mr="📍 अहमदनगर, महाराष्ट्र">📍 Ahmednagar, Maharashtra
+                    </p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="footer-bottom">
+                <p>
+                    <span
+                        data-en="© 2026 Shree Datta Devasthan. All rights reserved. | Built with devotion and faith 🙏"
+                        data-mr="© २०२६ श्री दत्त देवस्थान. सर्व हक्क राखीव. | भक्ती आणि श्रद्धेने बांधले 🙏">© 2026
+                        Shree Datta Devasthan. All rights reserved. | Built with devotion and faith 🙏</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Volunteer Registration Modal -->
+    <div class="modal" id="volunteerModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeVolunteerModal">×</button>
+            <h2 data-en="Volunteer Registration" data-mr="स्वयंसेवक नोंदणी">Volunteer Registration</h2>
+            <form class="modal-form" id="volunteerForm">
+                <input type="text" placeholder="Full Name" data-placeholder-en="Full Name"
+                    data-placeholder-mr="पूर्ण नाव" required>
+                <input type="email" placeholder="Email Address" data-placeholder-en="Email Address"
+                    data-placeholder-mr="ईमेल पत्ता" required>
+                <input type="tel" placeholder="Phone Number" data-placeholder-en="Phone Number"
+                    data-placeholder-mr="फोन नंबर" required>
+                <select required>
+                    <option value="" data-en="Select Service Area" data-mr="सेवा क्षेत्र निवडा">Select Service Area
+                    </option>
+                    <option value="puja" data-en="Puja Services" data-mr="पूजा सेवा">Puja Services</option>
+                    <option value="kitchen" data-en="Kitchen/Prasadam" data-mr="स्वयंपाकघर/प्रसाद">Kitchen/Prasadam
+                    </option>
+                    <option value="cleaning" data-en="Temple Cleaning" data-mr="मंदिर साफसफाई">Temple Cleaning</option>
+                    <option value="events" data-en="Event Management" data-mr="कार्यक्रम व्यवस्थापन">Event Management
+                    </option>
+                    <option value="teaching" data-en="Teaching/Education" data-mr="शिकवणे/शिक्षण">Teaching/Education
+                    </option>
+                </select>
+                <textarea placeholder="Tell us about yourself" data-placeholder-en="Tell us about yourself"
+                    data-placeholder-mr="आपल्याबद्दल सांगा" rows="4" required></textarea>
+                <button type="submit" class="btn btn-primary" data-en="Submit Registration"
+                    data-mr="नोंदणी सबमिट करा">Submit Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Donation Modal -->
+    <div class="modal" id="donationModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeDonationModal">×</button>
+            <h2 data-en="Make a Donation" data-mr="देणगी द्या">Make a Donation</h2>
+            <form class="modal-form" id="donationForm">
+                <input type="text" placeholder="Full Name" data-placeholder-en="Full Name"
+                    data-placeholder-mr="पूर्ण नाव" required>
+                <input type="email" placeholder="Email Address" data-placeholder-en="Email Address"
+                    data-placeholder-mr="ईमेल पत्ता" required>
+                <input type="tel" placeholder="Phone Number" data-placeholder-en="Phone Number"
+                    data-placeholder-mr="फोन नंबर" required>
+                <select required>
+                    <option value="" data-en="Select Donation Purpose" data-mr="देणगीचा उद्देश निवडा">Select Donation
+                        Purpose</option>
+                    <option value="general" data-en="General Temple Maintenance" data-mr="सामान्य मंदिर देखभाल">General
+                        Temple Maintenance</option>
+                    <option value="goshala" data-en="Goshala (Cow Shelter)" data-mr="गोशाळा">Goshala (Cow Shelter)
+                    </option>
+                    <option value="education" data-en="Vedic Education" data-mr="वैदिक शिक्षण">Vedic Education</option>
+                    <option value="annadaan" data-en="Annadaan (Free Meals)" data-mr="अन्नदान">Annadaan (Free Meals)
+                    </option>
+                    <option value="renovation" data-en="Temple Renovation" data-mr="मंदिर नूतनीकरण">Temple Renovation
+                    </option>
+                </select>
+                <div class="donation-amounts">
+                    <button type="button" class="amount-btn" data-amount="501">₹501</button>
+                    <button type="button" class="amount-btn" data-amount="1001">₹1001</button>
+                    <button type="button" class="amount-btn" data-amount="5001">₹5001</button>
+                    <button type="button" class="amount-btn" data-amount="11001">₹11001</button>
+                </div>
+                <input type="number" id="customAmount" placeholder="Custom Amount" data-placeholder-en="Custom Amount"
+                    data-placeholder-mr="सानुकूल रक्कम" min="51" required>
+                <button type="submit" class="btn btn-primary" data-en="Proceed to Payment" data-mr="पेमेंटवर जा">Proceed
+                    to Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
