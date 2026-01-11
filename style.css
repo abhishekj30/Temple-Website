@@ -1463,6 +1463,8 @@ h3 {
         visibility: hidden;
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 999;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
     }
 
     .nav-right.active {
@@ -1484,20 +1486,46 @@ h3 {
         font-size: 1.05rem;
         color: white;
         border-radius: var(--radius-md);
+        position: relative;
+    }
+
+    /* Dropdown indicator for mobile */
+    .dropdown>a::after {
+        content: '▼';
+        position: absolute;
+        right: 1rem;
+        font-size: 0.8rem;
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown.active>a::after {
+        transform: rotate(180deg);
     }
 
     .dropdown-menu {
         position: static;
-        opacity: 1;
-        visibility: visible;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
         transform: none;
         box-shadow: none;
-        margin-top: 0.5rem;
+        margin: 0;
         margin-left: 1rem;
-        padding: 0.5rem 0;
+        padding: 0;
         background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: none;
         min-width: auto;
+        transition: all 0.3s ease;
+    }
+
+    .dropdown.active .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
+        padding: 0.5rem 0;
+        margin-top: 0.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .dropdown-menu a {

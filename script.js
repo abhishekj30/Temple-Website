@@ -126,12 +126,40 @@ function initializeNavigation() {
         navLinks.classList.toggle('active');
     });
 
-    // Close menu when clicking on a link
+    // Mobile dropdown toggle
+    if (window.innerWidth <= 768) {
+        const dropdowns = document.querySelectorAll('.nav-links .dropdown');
+        dropdowns.forEach(dropdown => {
+            const dropdownLink = dropdown.querySelector('a');
+            dropdownLink.addEventListener('click', (e) => {
+                // If clicking on parent dropdown link on mobile
+                if (e.target === dropdownLink && dropdown.querySelector('.dropdown-menu')) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            });
+        });
+    }
+
+    // Close menu when clicking on a non-dropdown link
     document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (e) => {
+            // Don't close if it's a dropdown parent on mobile
+            if (window.innerWidth <= 768 && link.parentElement.classList.contains('dropdown')) {
+                return;
+            }
             menuToggle.classList.remove('active');
             navLinks.classList.remove('active');
         });
+    });
+
+    // Close dropdowns when menu closes
+    menuToggle.addEventListener('click', () => {
+        if (!navLinks.classList.contains('active')) {
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
     });
 
     // Navbar scroll effect
@@ -368,15 +396,15 @@ function initializeModals() {
     const donateBtn = document.getElementById('donateBtn');
     const closeVolunteerModal = document.getElementById('closeVolunteerModal');
     const closeDonationModal = document.getElementById('closeDonationModal');
-    
+
     // Navigation bar links
     const navDonateBtn = document.getElementById('navDonateBtn');
     const navSevaBtn = document.getElementById('navSevaBtn');
-    
+
     // Open modals
     volunteerBtn.addEventListener('click', () => openModal('volunteerModal'));
     donateBtn.addEventListener('click', () => openModal('donationModal'));
-    
+
     // Navigation links
     if (navDonateBtn) {
         navDonateBtn.addEventListener('click', (e) => {
@@ -384,18 +412,18 @@ function initializeModals() {
             openModal('donationModal');
         });
     }
-    
+
     if (navSevaBtn) {
         navSevaBtn.addEventListener('click', (e) => {
             e.preventDefault();
             openModal('volunteerModal');
         });
     }
-    
+
     // Close modals
     closeVolunteerModal.addEventListener('click', () => closeModal('volunteerModal'));
     closeDonationModal.addEventListener('click', () => closeModal('donationModal'));
-    
+
     // Close on background click
     document.querySelectorAll('.modal').forEach(modal => {
         modal.addEventListener('click', (e) => {
@@ -404,7 +432,7 @@ function initializeModals() {
             }
         });
     });
-    
+
     // Close on Escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
