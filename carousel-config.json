@@ -1,0 +1,30 @@
+{
+  "carouselImages": [
+    {
+      "id": 1,
+      "filename": "carousel-1.jpg",
+      "alt": "Temple Interior View",
+      "altMarathi": "मंदिर आंतरिक दृश्य",
+      "active": true
+    },
+    {
+      "id": 2,
+      "filename": "carousel-2.jpg",
+      "alt": "Temple Exterior",
+      "altMarathi": "मंदिर बाह्य",
+      "active": true
+    },
+    {
+      "id": 3,
+      "filename": "carousel-3.jpg",
+      "alt": "Festival Celebration",
+      "altMarathi": "सण साजरा",
+      "active": true
+    }
+  ],
+  "settings": {
+    "autoRotateInterval": 5000,
+    "transitionDuration": 500
+  },
+  "instructions": "To update carousel images: 1. Add your images to the website folder with names like carousel-1.jpg, carousel-2.jpg, etc. 2. Update the 'filename' above to match your image names. 3. Set 'active' to false to hide an image without deleting it. 4. Save this file and refresh the website."
+}
