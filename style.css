@@ -1,25 +1,25 @@
 :root {
-    /* Sringeri-inspired Color Palette */
-    --primary-saffron: #FF6B35;
-    --primary-orange: #F77F00;
-    --deep-maroon: #8B0000;
-    --light-maroon: #A52A2A;
-    --accent-gold: #DAA520;
-    --bright-gold: #FFD700;
-    --warm-ivory: #FFF8F0;
-    --soft-cream: #FFFAF5;
+    /* Vibrant & Energetic Temple Palette */
+    --primary-saffron: #FF6347;
+    --primary-orange: #FF7043;
+    --deep-maroon: #D84315;
+    --light-maroon: #FF5722;
+    --accent-gold: #FFA726;
+    --bright-gold: #FFB300;
+    --warm-ivory: #FFFAF0;
+    --soft-cream: #FFF9F0;
 
     /* Neutral Colors */
-    --dark-brown: #3E2723;
-    --text-primary: #2C1810;
-    --text-secondary: #5D4037;
-    --text-muted: #795548;
-    --border-light: #D7CCC8;
+    --dark-brown: #5D4037;
+    --text-primary: #3E2723;
+    --text-secondary: #6D4C41;
+    --text-muted: #8D6E63;
+    --border-light: #FFCCBC;
 
-    /* Gradients */
-    --gradient-divine: linear-gradient(135deg, #FF6B35 0%, #F77F00 50%, #DAA520 100%);
-    --gradient-maroon: linear-gradient(135deg, #8B0000 0%, #A52A2A 100%);
-    --gradient-gold: linear-gradient(135deg, #DAA520 0%, #FFD700 100%);
+    /* Gradients - Vibrant & Lively */
+    --gradient-divine: linear-gradient(135deg, #FF6347 0%, #FF7043 50%, #FFA726 100%);
+    --gradient-maroon: linear-gradient(135deg, #D84315 0%, #FF5722 100%);
+    --gradient-gold: linear-gradient(135deg, #FFA726 0%, #FFB300 100%);
     --gradient-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
 
     /* Spacing */
@@ -67,8 +67,55 @@ body {
     overflow-x: hidden;
 }
 
-body[lang="mr"] {
+/* Marathi font with size adjustment for visual consistency */
+body[lang="mr"],
+html[lang="mr"] {
     font-family: 'Noto Serif Devanagari', serif;
+}
+
+/* Adjust Marathi font size for all text elements to match English visual size */
+html[lang="mr"] {
+    font-size: 16.5px;
+    /* Reduced from 17px to prevent overflow */
+}
+
+html[lang="mr"] h1 {
+    font-size: 103%;
+}
+
+html[lang="mr"] h2 {
+    font-size: 103%;
+}
+
+html[lang="mr"] h3 {
+    font-size: 103%;
+}
+
+html[lang="mr"] .nav-links,
+html[lang="mr"] .logo-text,
+html[lang="mr"] p,
+html[lang="mr"] .btn {
+    letter-spacing: 0.01em;
+}
+
+/* Tighter navbar layout for Marathi */
+html[lang="mr"] .nav-links {
+    gap: 0.3rem;
+}
+
+html[lang="mr"] .nav-links>li>a {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+html[lang="mr"] .nav-right {
+    gap: 1.5rem;
+}
+
+html[lang="mr"] .logo-text {
+    font-size: 1rem;
+    max-width: 180px;
 }
 
 img {
@@ -173,7 +220,7 @@ h3 {
     top: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(135deg, rgba(139, 0, 0, 0.95) 0%, rgba(165, 42, 42, 0.95) 100%);
+    background: linear-gradient(135deg, rgba(216, 67, 21, 0.95) 0%, rgba(255, 87, 34, 0.95) 100%);
     backdrop-filter: blur(15px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
     z-index: 1000;
@@ -182,7 +229,7 @@ h3 {
 }
 
 .navbar.scrolled {
-    background: linear-gradient(135deg, rgba(139, 0, 0, 0.98) 0%, rgba(165, 42, 42, 0.98) 100%);
+    background: linear-gradient(135deg, rgba(216, 67, 21, 0.98) 0%, rgba(255, 87, 34, 0.98) 100%);
     box-shadow: 0 6px 40px rgba(0, 0, 0, 0.4);
     border-bottom: 2px solid var(--bright-gold);
 }
@@ -1428,10 +1475,22 @@ h3 {
         padding: 0.8rem 1rem;
     }
 
+
     .logo {
         font-size: 1rem;
         padding: 0.4rem 0.8rem;
         gap: 0.6rem;
+        overflow: hidden !important;
+    }
+
+    /* Disable hover effects on mobile */
+    .logo:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    .logo:hover::before {
+        transform: none !important;
     }
 
     .logo-img {
@@ -1440,8 +1499,17 @@ h3 {
         min-width: 35px;
     }
 
+    .logo:hover .logo-img {
+        transform: none !important;
+    }
+
     .logo-text {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        word-break: keep-all;
+        overflow-wrap: normal;
+        white-space: normal;
+        max-width: 200px;
     }
 
     .lang-toggle {
@@ -1456,7 +1524,7 @@ h3 {
         left: 0 !important;
         width: 100% !important;
         height: calc(100vh - 60px) !important;
-        background: linear-gradient(135deg, rgba(139, 0, 0, 0.98) 0%, rgba(165, 42, 42, 0.98) 100%) !important;
+        background: linear-gradient(135deg, rgba(216, 67, 21, 0.98) 0%, rgba(255, 87, 34, 0.98) 100%) !important;
         flex-direction: column !important;
         padding: 0 !important;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
